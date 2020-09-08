@@ -24,6 +24,7 @@ ____
 ### API Testing
 ##### The base test url is `https://sste-test.blackbook.com/retailapi/retailapi/`
 ##### The json_schema is in `retail_schema.json` for reference 
+> All relevant code should be placed in the `./api_testing` folder
 
 All API responses are JSON.
 
@@ -41,6 +42,7 @@ _____
 
 ### UI Testing
 ##### The base test url is `https://computer-database.herokuapp.com/computers`
+> All relevant code should be placed in the `./ui_testing` folder
 1. Create a new computer with the following data:
     * Computer name:        "<your choice>"
     * Introduced date:      "2020-09-01"
