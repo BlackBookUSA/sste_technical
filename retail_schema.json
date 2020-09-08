@@ -1,0 +1,5912 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "warning_count": {
+      "type": "integer"
+    },
+    "error_count": {
+      "type": "integer"
+    },
+    "message_list": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "description": {
+              "type": "string"
+            },
+            "code": {
+              "type": "integer"
+            },
+            "type": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "description",
+            "code",
+            "type"
+          ]
+        }
+      ]
+    },
+    "token_expiration_minutes": {
+      "type": "integer"
+    },
+    "input_parameters": {
+      "type": "object",
+      "properties": {
+        "uvc": {
+          "type": "string"
+        },
+        "zipcode": {
+          "type": "string"
+        },
+        "order_by": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "column": {
+                  "type": "string"
+                },
+                "direction": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "column",
+                "direction"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "uvc",
+        "zipcode",
+        "order_by"
+      ]
+    },
+    "effective_parameters": {
+      "type": "object",
+      "properties": {
+        "uvc": {
+          "type": "string"
+        },
+        "zipcode": {
+          "type": "string"
+        },
+        "minimum_mileage": {
+          "type": "integer"
+        },
+        "maximum_mileage": {
+          "type": "integer"
+        },
+        "radius_miles": {
+          "type": "integer"
+        },
+        "in_state": {
+          "type": "boolean"
+        },
+        "listing_type": {
+          "type": "string"
+        },
+        "all_trims": {
+          "type": "boolean"
+        },
+        "duplicate_vins": {
+          "type": "boolean"
+        },
+        "day_range": {
+          "type": "integer"
+        },
+        "price_analysis": {
+          "type": "boolean"
+        },
+        "dealer_stats": {
+          "type": "boolean"
+        },
+        "dealer_id": {
+          "type": "integer"
+        },
+        "listings_per_page": {
+          "type": "integer"
+        },
+        "page_number": {
+          "type": "integer"
+        },
+        "order_by": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "column": {
+                  "type": "string"
+                },
+                "direction": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "column",
+                "direction"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "uvc",
+        "zipcode",
+        "minimum_mileage",
+        "maximum_mileage",
+        "radius_miles",
+        "in_state",
+        "listing_type",
+        "all_trims",
+        "duplicate_vins",
+        "day_range",
+        "price_analysis",
+        "dealer_stats",
+        "dealer_id",
+        "listings_per_page",
+        "page_number",
+        "order_by"
+      ]
+    },
+    "record_count": {
+      "type": "integer"
+    },
+    "page_count": {
+      "type": "integer"
+    },
+    "listings": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "listing_id": {
+              "type": "string"
+            },
+            "listing_heading": {
+              "type": "string"
+            },
+            "listing_type": {
+              "type": "string"
+            },
+            "listing_url": {
+              "type": "string"
+            },
+            "listing_first_date": {
+              "type": "string"
+            },
+            "days_on_market": {
+              "type": "integer"
+            },
+            "dealer_name": {
+              "type": "string"
+            },
+            "dealer_street": {
+              "type": "string"
+            },
+            "dealer_city": {
+              "type": "string"
+            },
+            "dealer_state": {
+              "type": "string"
+            },
+            "dealer_zipcode": {
+              "type": "string"
+            },
+            "dealer_url": {
+              "type": "string"
+            },
+            "dealer_email": {
+              "type": "string"
+            },
+            "dealer_phone": {
+              "type": "string"
+            },
+            "dealer_type": {
+              "type": "string"
+            },
+            "stock_type": {
+              "type": "string"
+            },
+            "vin": {
+              "type": "string"
+            },
+            "uvc": {
+              "type": "string"
+            },
+            "mileage": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "msrp": {
+              "type": "integer"
+            },
+            "model_year": {
+              "type": "string"
+            },
+            "make": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "series": {
+              "type": "string"
+            },
+            "style": {
+              "type": "string"
+            },
+            "certified": {
+              "type": "boolean"
+            },
+            "has_leather": {
+              "type": "boolean"
+            },
+            "has_navigation": {
+              "type": "boolean"
+            },
+            "exterior_color": {
+              "type": "string"
+            },
+            "exterior_color_category": {
+              "type": "string"
+            },
+            "interior_color": {
+              "type": "string"
+            },
+            "interior_color_category": {
+              "type": "string"
+            },
+            "price_analysis": {
+              "type": "boolean"
+            },
+            "wheelbase_from_vin": {
+              "type": "string"
+            },
+            "drivetrain_from_vin": {
+              "type": "string"
+            },
+            "engine_from_vin": {
+              "type": "string"
+            },
+            "transmission_from_vin": {
+              "type": "string"
+            },
+            "fuel_type_from_vin": {
+              "type": "string"
+            },
+            "optional_features": {
+              "type": "string"
+            },
+            "standard_features": {
+              "type": "string"
+            },
+            "seller_notes": {
+              "type": "string"
+            },
+            "number_price_changes": {
+              "type": "integer"
+            },
+            "price_history_delimited": {
+              "type": "string"
+            },
+            "price_history": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                }
+              ]
+            },
+            "distance_to_dealer": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "listing_id",
+            "listing_heading",
+            "listing_type",
+            "listing_url",
+            "listing_first_date",
+            "days_on_market",
+            "dealer_name",
+            "dealer_street",
+            "dealer_city",
+            "dealer_state",
+            "dealer_zipcode",
+            "dealer_url",
+            "dealer_email",
+            "dealer_phone",
+            "dealer_type",
+            "stock_type",
+            "vin",
+            "uvc",
+            "mileage",
+            "price",
+            "msrp",
+            "model_year",
+            "make",
+            "model",
+            "series",
+            "style",
+            "certified",
+            "has_leather",
+            "has_navigation",
+            "exterior_color",
+            "exterior_color_category",
+            "interior_color",
+            "interior_color_category",
+            "price_analysis",
+            "wheelbase_from_vin",
+            "drivetrain_from_vin",
+            "engine_from_vin",
+            "transmission_from_vin",
+            "fuel_type_from_vin",
+            "optional_features",
+            "standard_features",
+            "seller_notes",
+            "number_price_changes",
+            "price_history_delimited",
+            "price_history",
+            "distance_to_dealer"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "listing_id": {
+              "type": "string"
+            },
+            "listing_heading": {
+              "type": "string"
+            },
+            "listing_type": {
+              "type": "string"
+            },
+            "listing_url": {
+              "type": "string"
+            },
+            "listing_first_date": {
+              "type": "string"
+            },
+            "days_on_market": {
+              "type": "integer"
+            },
+            "dealer_name": {
+              "type": "string"
+            },
+            "dealer_street": {
+              "type": "string"
+            },
+            "dealer_city": {
+              "type": "string"
+            },
+            "dealer_state": {
+              "type": "string"
+            },
+            "dealer_zipcode": {
+              "type": "string"
+            },
+            "dealer_url": {
+              "type": "string"
+            },
+            "dealer_email": {
+              "type": "string"
+            },
+            "dealer_phone": {
+              "type": "string"
+            },
+            "dealer_type": {
+              "type": "string"
+            },
+            "stock_type": {
+              "type": "string"
+            },
+            "vin": {
+              "type": "string"
+            },
+            "uvc": {
+              "type": "string"
+            },
+            "mileage": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "msrp": {
+              "type": "integer"
+            },
+            "model_year": {
+              "type": "string"
+            },
+            "make": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "series": {
+              "type": "string"
+            },
+            "style": {
+              "type": "string"
+            },
+            "certified": {
+              "type": "boolean"
+            },
+            "has_leather": {
+              "type": "boolean"
+            },
+            "has_navigation": {
+              "type": "boolean"
+            },
+            "exterior_color": {
+              "type": "string"
+            },
+            "exterior_color_category": {
+              "type": "string"
+            },
+            "interior_color": {
+              "type": "string"
+            },
+            "interior_color_category": {
+              "type": "string"
+            },
+            "price_analysis": {
+              "type": "boolean"
+            },
+            "wheelbase_from_vin": {
+              "type": "string"
+            },
+            "drivetrain_from_vin": {
+              "type": "string"
+            },
+            "engine_from_vin": {
+              "type": "string"
+            },
+            "transmission_from_vin": {
+              "type": "string"
+            },
+            "fuel_type_from_vin": {
+              "type": "string"
+            },
+            "optional_features": {
+              "type": "string"
+            },
+            "standard_features": {
+              "type": "string"
+            },
+            "seller_notes": {
+              "type": "string"
+            },
+            "number_price_changes": {
+              "type": "integer"
+            },
+            "price_history_delimited": {
+              "type": "string"
+            },
+            "price_history": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                }
+              ]
+            },
+            "distance_to_dealer": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "listing_id",
+            "listing_heading",
+            "listing_type",
+            "listing_url",
+            "listing_first_date",
+            "days_on_market",
+            "dealer_name",
+            "dealer_street",
+            "dealer_city",
+            "dealer_state",
+            "dealer_zipcode",
+            "dealer_url",
+            "dealer_email",
+            "dealer_phone",
+            "dealer_type",
+            "stock_type",
+            "vin",
+            "uvc",
+            "mileage",
+            "price",
+            "msrp",
+            "model_year",
+            "make",
+            "model",
+            "series",
+            "style",
+            "certified",
+            "has_leather",
+            "has_navigation",
+            "exterior_color",
+            "exterior_color_category",
+            "interior_color",
+            "interior_color_category",
+            "price_analysis",
+            "wheelbase_from_vin",
+            "drivetrain_from_vin",
+            "engine_from_vin",
+            "transmission_from_vin",
+            "fuel_type_from_vin",
+            "optional_features",
+            "standard_features",
+            "seller_notes",
+            "number_price_changes",
+            "price_history_delimited",
+            "price_history",
+            "distance_to_dealer"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "listing_id": {
+              "type": "string"
+            },
+            "listing_heading": {
+              "type": "string"
+            },
+            "listing_type": {
+              "type": "string"
+            },
+            "listing_url": {
+              "type": "string"
+            },
+            "listing_first_date": {
+              "type": "string"
+            },
+            "days_on_market": {
+              "type": "integer"
+            },
+            "dealer_name": {
+              "type": "string"
+            },
+            "dealer_street": {
+              "type": "string"
+            },
+            "dealer_city": {
+              "type": "string"
+            },
+            "dealer_state": {
+              "type": "string"
+            },
+            "dealer_zipcode": {
+              "type": "string"
+            },
+            "dealer_url": {
+              "type": "string"
+            },
+            "dealer_email": {
+              "type": "string"
+            },
+            "dealer_phone": {
+              "type": "string"
+            },
+            "dealer_type": {
+              "type": "string"
+            },
+            "stock_type": {
+              "type": "string"
+            },
+            "vin": {
+              "type": "string"
+            },
+            "uvc": {
+              "type": "string"
+            },
+            "mileage": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "msrp": {
+              "type": "integer"
+            },
+            "model_year": {
+              "type": "string"
+            },
+            "make": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "series": {
+              "type": "string"
+            },
+            "style": {
+              "type": "string"
+            },
+            "certified": {
+              "type": "boolean"
+            },
+            "has_leather": {
+              "type": "boolean"
+            },
+            "has_navigation": {
+              "type": "boolean"
+            },
+            "exterior_color": {
+              "type": "string"
+            },
+            "exterior_color_category": {
+              "type": "string"
+            },
+            "interior_color": {
+              "type": "string"
+            },
+            "interior_color_category": {
+              "type": "string"
+            },
+            "price_analysis": {
+              "type": "boolean"
+            },
+            "wheelbase_from_vin": {
+              "type": "string"
+            },
+            "drivetrain_from_vin": {
+              "type": "string"
+            },
+            "engine_from_vin": {
+              "type": "string"
+            },
+            "transmission_from_vin": {
+              "type": "string"
+            },
+            "fuel_type_from_vin": {
+              "type": "string"
+            },
+            "optional_features": {
+              "type": "string"
+            },
+            "standard_features": {
+              "type": "string"
+            },
+            "seller_notes": {
+              "type": "string"
+            },
+            "number_price_changes": {
+              "type": "integer"
+            },
+            "price_history_delimited": {
+              "type": "string"
+            },
+            "price_history": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                }
+              ]
+            },
+            "distance_to_dealer": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "listing_id",
+            "listing_heading",
+            "listing_type",
+            "listing_url",
+            "listing_first_date",
+            "days_on_market",
+            "dealer_name",
+            "dealer_street",
+            "dealer_city",
+            "dealer_state",
+            "dealer_zipcode",
+            "dealer_url",
+            "dealer_email",
+            "dealer_phone",
+            "dealer_type",
+            "stock_type",
+            "vin",
+            "uvc",
+            "mileage",
+            "price",
+            "msrp",
+            "model_year",
+            "make",
+            "model",
+            "series",
+            "style",
+            "certified",
+            "has_leather",
+            "has_navigation",
+            "exterior_color",
+            "exterior_color_category",
+            "interior_color",
+            "interior_color_category",
+            "price_analysis",
+            "wheelbase_from_vin",
+            "drivetrain_from_vin",
+            "engine_from_vin",
+            "transmission_from_vin",
+            "fuel_type_from_vin",
+            "optional_features",
+            "standard_features",
+            "seller_notes",
+            "number_price_changes",
+            "price_history_delimited",
+            "price_history",
+            "distance_to_dealer"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "listing_id": {
+              "type": "string"
+            },
+            "listing_heading": {
+              "type": "string"
+            },
+            "listing_type": {
+              "type": "string"
+            },
+            "listing_url": {
+              "type": "string"
+            },
+            "listing_first_date": {
+              "type": "string"
+            },
+            "days_on_market": {
+              "type": "integer"
+            },
+            "dealer_name": {
+              "type": "string"
+            },
+            "dealer_street": {
+              "type": "string"
+            },
+            "dealer_city": {
+              "type": "string"
+            },
+            "dealer_state": {
+              "type": "string"
+            },
+            "dealer_zipcode": {
+              "type": "string"
+            },
+            "dealer_url": {
+              "type": "string"
+            },
+            "dealer_email": {
+              "type": "string"
+            },
+            "dealer_phone": {
+              "type": "string"
+            },
+            "dealer_type": {
+              "type": "string"
+            },
+            "stock_type": {
+              "type": "string"
+            },
+            "vin": {
+              "type": "string"
+            },
+            "uvc": {
+              "type": "string"
+            },
+            "mileage": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "msrp": {
+              "type": "integer"
+            },
+            "model_year": {
+              "type": "string"
+            },
+            "make": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "series": {
+              "type": "string"
+            },
+            "style": {
+              "type": "string"
+            },
+            "certified": {
+              "type": "boolean"
+            },
+            "has_leather": {
+              "type": "boolean"
+            },
+            "has_navigation": {
+              "type": "boolean"
+            },
+            "exterior_color": {
+              "type": "string"
+            },
+            "exterior_color_category": {
+              "type": "string"
+            },
+            "interior_color": {
+              "type": "string"
+            },
+            "interior_color_category": {
+              "type": "string"
+            },
+            "price_analysis": {
+              "type": "boolean"
+            },
+            "wheelbase_from_vin": {
+              "type": "string"
+            },
+            "drivetrain_from_vin": {
+              "type": "string"
+            },
+            "engine_from_vin": {
+              "type": "string"
+            },
+            "transmission_from_vin": {
+              "type": "string"
+            },
+            "fuel_type_from_vin": {
+              "type": "string"
+            },
+            "optional_features": {
+              "type": "string"
+            },
+            "standard_features": {
+              "type": "string"
+            },
+            "seller_notes": {
+              "type": "string"
+            },
+            "number_price_changes": {
+              "type": "integer"
+            },
+            "price_history_delimited": {
+              "type": "string"
+            },
+            "price_history": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                }
+              ]
+            },
+            "distance_to_dealer": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "listing_id",
+            "listing_heading",
+            "listing_type",
+            "listing_url",
+            "listing_first_date",
+            "days_on_market",
+            "dealer_name",
+            "dealer_street",
+            "dealer_city",
+            "dealer_state",
+            "dealer_zipcode",
+            "dealer_url",
+            "dealer_email",
+            "dealer_phone",
+            "dealer_type",
+            "stock_type",
+            "vin",
+            "uvc",
+            "mileage",
+            "price",
+            "msrp",
+            "model_year",
+            "make",
+            "model",
+            "series",
+            "style",
+            "certified",
+            "has_leather",
+            "has_navigation",
+            "exterior_color",
+            "exterior_color_category",
+            "interior_color",
+            "interior_color_category",
+            "price_analysis",
+            "wheelbase_from_vin",
+            "drivetrain_from_vin",
+            "engine_from_vin",
+            "transmission_from_vin",
+            "fuel_type_from_vin",
+            "optional_features",
+            "standard_features",
+            "seller_notes",
+            "number_price_changes",
+            "price_history_delimited",
+            "price_history",
+            "distance_to_dealer"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "listing_id": {
+              "type": "string"
+            },
+            "listing_heading": {
+              "type": "string"
+            },
+            "listing_type": {
+              "type": "string"
+            },
+            "listing_url": {
+              "type": "string"
+            },
+            "listing_first_date": {
+              "type": "string"
+            },
+            "days_on_market": {
+              "type": "integer"
+            },
+            "dealer_name": {
+              "type": "string"
+            },
+            "dealer_street": {
+              "type": "string"
+            },
+            "dealer_city": {
+              "type": "string"
+            },
+            "dealer_state": {
+              "type": "string"
+            },
+            "dealer_zipcode": {
+              "type": "string"
+            },
+            "dealer_url": {
+              "type": "string"
+            },
+            "dealer_email": {
+              "type": "string"
+            },
+            "dealer_phone": {
+              "type": "string"
+            },
+            "dealer_type": {
+              "type": "string"
+            },
+            "stock_type": {
+              "type": "string"
+            },
+            "vin": {
+              "type": "string"
+            },
+            "uvc": {
+              "type": "string"
+            },
+            "mileage": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "msrp": {
+              "type": "integer"
+            },
+            "model_year": {
+              "type": "string"
+            },
+            "make": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "series": {
+              "type": "string"
+            },
+            "style": {
+              "type": "string"
+            },
+            "certified": {
+              "type": "boolean"
+            },
+            "has_leather": {
+              "type": "boolean"
+            },
+            "has_navigation": {
+              "type": "boolean"
+            },
+            "exterior_color": {
+              "type": "string"
+            },
+            "exterior_color_category": {
+              "type": "string"
+            },
+            "interior_color": {
+              "type": "string"
+            },
+            "interior_color_category": {
+              "type": "string"
+            },
+            "price_analysis": {
+              "type": "boolean"
+            },
+            "wheelbase_from_vin": {
+              "type": "string"
+            },
+            "drivetrain_from_vin": {
+              "type": "string"
+            },
+            "engine_from_vin": {
+              "type": "string"
+            },
+            "transmission_from_vin": {
+              "type": "string"
+            },
+            "fuel_type_from_vin": {
+              "type": "string"
+            },
+            "optional_features": {
+              "type": "string"
+            },
+            "standard_features": {
+              "type": "string"
+            },
+            "seller_notes": {
+              "type": "string"
+            },
+            "number_price_changes": {
+              "type": "integer"
+            },
+            "price_history_delimited": {
+              "type": "string"
+            },
+            "price_history": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                }
+              ]
+            },
+            "distance_to_dealer": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "listing_id",
+            "listing_heading",
+            "listing_type",
+            "listing_url",
+            "listing_first_date",
+            "days_on_market",
+            "dealer_name",
+            "dealer_street",
+            "dealer_city",
+            "dealer_state",
+            "dealer_zipcode",
+            "dealer_url",
+            "dealer_email",
+            "dealer_phone",
+            "dealer_type",
+            "stock_type",
+            "vin",
+            "uvc",
+            "mileage",
+            "price",
+            "msrp",
+            "model_year",
+            "make",
+            "model",
+            "series",
+            "style",
+            "certified",
+            "has_leather",
+            "has_navigation",
+            "exterior_color",
+            "exterior_color_category",
+            "interior_color",
+            "interior_color_category",
+            "price_analysis",
+            "wheelbase_from_vin",
+            "drivetrain_from_vin",
+            "engine_from_vin",
+            "transmission_from_vin",
+            "fuel_type_from_vin",
+            "optional_features",
+            "standard_features",
+            "seller_notes",
+            "number_price_changes",
+            "price_history_delimited",
+            "price_history",
+            "distance_to_dealer"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "listing_id": {
+              "type": "string"
+            },
+            "listing_heading": {
+              "type": "string"
+            },
+            "listing_type": {
+              "type": "string"
+            },
+            "listing_url": {
+              "type": "string"
+            },
+            "listing_first_date": {
+              "type": "string"
+            },
+            "days_on_market": {
+              "type": "integer"
+            },
+            "dealer_name": {
+              "type": "string"
+            },
+            "dealer_street": {
+              "type": "string"
+            },
+            "dealer_city": {
+              "type": "string"
+            },
+            "dealer_state": {
+              "type": "string"
+            },
+            "dealer_zipcode": {
+              "type": "string"
+            },
+            "dealer_url": {
+              "type": "string"
+            },
+            "dealer_email": {
+              "type": "string"
+            },
+            "dealer_phone": {
+              "type": "string"
+            },
+            "dealer_type": {
+              "type": "string"
+            },
+            "stock_type": {
+              "type": "string"
+            },
+            "vin": {
+              "type": "string"
+            },
+            "uvc": {
+              "type": "string"
+            },
+            "mileage": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "msrp": {
+              "type": "integer"
+            },
+            "model_year": {
+              "type": "string"
+            },
+            "make": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "series": {
+              "type": "string"
+            },
+            "style": {
+              "type": "string"
+            },
+            "certified": {
+              "type": "boolean"
+            },
+            "has_leather": {
+              "type": "boolean"
+            },
+            "has_navigation": {
+              "type": "boolean"
+            },
+            "exterior_color": {
+              "type": "string"
+            },
+            "exterior_color_category": {
+              "type": "string"
+            },
+            "interior_color": {
+              "type": "string"
+            },
+            "interior_color_category": {
+              "type": "string"
+            },
+            "price_analysis": {
+              "type": "boolean"
+            },
+            "wheelbase_from_vin": {
+              "type": "string"
+            },
+            "drivetrain_from_vin": {
+              "type": "string"
+            },
+            "engine_from_vin": {
+              "type": "string"
+            },
+            "transmission_from_vin": {
+              "type": "string"
+            },
+            "fuel_type_from_vin": {
+              "type": "string"
+            },
+            "optional_features": {
+              "type": "string"
+            },
+            "standard_features": {
+              "type": "string"
+            },
+            "seller_notes": {
+              "type": "string"
+            },
+            "number_price_changes": {
+              "type": "integer"
+            },
+            "price_history_delimited": {
+              "type": "string"
+            },
+            "price_history": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                }
+              ]
+            },
+            "distance_to_dealer": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "listing_id",
+            "listing_heading",
+            "listing_type",
+            "listing_url",
+            "listing_first_date",
+            "days_on_market",
+            "dealer_name",
+            "dealer_street",
+            "dealer_city",
+            "dealer_state",
+            "dealer_zipcode",
+            "dealer_url",
+            "dealer_email",
+            "dealer_phone",
+            "dealer_type",
+            "stock_type",
+            "vin",
+            "uvc",
+            "mileage",
+            "price",
+            "msrp",
+            "model_year",
+            "make",
+            "model",
+            "series",
+            "style",
+            "certified",
+            "has_leather",
+            "has_navigation",
+            "exterior_color",
+            "exterior_color_category",
+            "interior_color",
+            "interior_color_category",
+            "price_analysis",
+            "wheelbase_from_vin",
+            "drivetrain_from_vin",
+            "engine_from_vin",
+            "transmission_from_vin",
+            "fuel_type_from_vin",
+            "optional_features",
+            "standard_features",
+            "seller_notes",
+            "number_price_changes",
+            "price_history_delimited",
+            "price_history",
+            "distance_to_dealer"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "listing_id": {
+              "type": "string"
+            },
+            "listing_heading": {
+              "type": "string"
+            },
+            "listing_type": {
+              "type": "string"
+            },
+            "listing_url": {
+              "type": "string"
+            },
+            "listing_first_date": {
+              "type": "string"
+            },
+            "days_on_market": {
+              "type": "integer"
+            },
+            "dealer_name": {
+              "type": "string"
+            },
+            "dealer_street": {
+              "type": "string"
+            },
+            "dealer_city": {
+              "type": "string"
+            },
+            "dealer_state": {
+              "type": "string"
+            },
+            "dealer_zipcode": {
+              "type": "string"
+            },
+            "dealer_url": {
+              "type": "string"
+            },
+            "dealer_email": {
+              "type": "string"
+            },
+            "dealer_phone": {
+              "type": "string"
+            },
+            "dealer_type": {
+              "type": "string"
+            },
+            "stock_type": {
+              "type": "string"
+            },
+            "vin": {
+              "type": "string"
+            },
+            "uvc": {
+              "type": "string"
+            },
+            "mileage": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "msrp": {
+              "type": "integer"
+            },
+            "model_year": {
+              "type": "string"
+            },
+            "make": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "series": {
+              "type": "string"
+            },
+            "style": {
+              "type": "string"
+            },
+            "certified": {
+              "type": "boolean"
+            },
+            "has_leather": {
+              "type": "boolean"
+            },
+            "has_navigation": {
+              "type": "boolean"
+            },
+            "exterior_color": {
+              "type": "string"
+            },
+            "exterior_color_category": {
+              "type": "string"
+            },
+            "interior_color": {
+              "type": "string"
+            },
+            "interior_color_category": {
+              "type": "string"
+            },
+            "price_analysis": {
+              "type": "boolean"
+            },
+            "wheelbase_from_vin": {
+              "type": "string"
+            },
+            "drivetrain_from_vin": {
+              "type": "string"
+            },
+            "engine_from_vin": {
+              "type": "string"
+            },
+            "transmission_from_vin": {
+              "type": "string"
+            },
+            "fuel_type_from_vin": {
+              "type": "string"
+            },
+            "optional_features": {
+              "type": "string"
+            },
+            "standard_features": {
+              "type": "string"
+            },
+            "seller_notes": {
+              "type": "string"
+            },
+            "number_price_changes": {
+              "type": "integer"
+            },
+            "price_history_delimited": {
+              "type": "string"
+            },
+            "price_history": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                }
+              ]
+            },
+            "distance_to_dealer": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "listing_id",
+            "listing_heading",
+            "listing_type",
+            "listing_url",
+            "listing_first_date",
+            "days_on_market",
+            "dealer_name",
+            "dealer_street",
+            "dealer_city",
+            "dealer_state",
+            "dealer_zipcode",
+            "dealer_url",
+            "dealer_email",
+            "dealer_phone",
+            "dealer_type",
+            "stock_type",
+            "vin",
+            "uvc",
+            "mileage",
+            "price",
+            "msrp",
+            "model_year",
+            "make",
+            "model",
+            "series",
+            "style",
+            "certified",
+            "has_leather",
+            "has_navigation",
+            "exterior_color",
+            "exterior_color_category",
+            "interior_color",
+            "interior_color_category",
+            "price_analysis",
+            "wheelbase_from_vin",
+            "drivetrain_from_vin",
+            "engine_from_vin",
+            "transmission_from_vin",
+            "fuel_type_from_vin",
+            "optional_features",
+            "standard_features",
+            "seller_notes",
+            "number_price_changes",
+            "price_history_delimited",
+            "price_history",
+            "distance_to_dealer"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "listing_id": {
+              "type": "string"
+            },
+            "listing_heading": {
+              "type": "string"
+            },
+            "listing_type": {
+              "type": "string"
+            },
+            "listing_url": {
+              "type": "string"
+            },
+            "listing_first_date": {
+              "type": "string"
+            },
+            "days_on_market": {
+              "type": "integer"
+            },
+            "dealer_name": {
+              "type": "string"
+            },
+            "dealer_street": {
+              "type": "string"
+            },
+            "dealer_city": {
+              "type": "string"
+            },
+            "dealer_state": {
+              "type": "string"
+            },
+            "dealer_zipcode": {
+              "type": "string"
+            },
+            "dealer_url": {
+              "type": "string"
+            },
+            "dealer_email": {
+              "type": "string"
+            },
+            "dealer_phone": {
+              "type": "string"
+            },
+            "dealer_type": {
+              "type": "string"
+            },
+            "stock_type": {
+              "type": "string"
+            },
+            "vin": {
+              "type": "string"
+            },
+            "uvc": {
+              "type": "string"
+            },
+            "mileage": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "msrp": {
+              "type": "integer"
+            },
+            "model_year": {
+              "type": "string"
+            },
+            "make": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "series": {
+              "type": "string"
+            },
+            "style": {
+              "type": "string"
+            },
+            "certified": {
+              "type": "boolean"
+            },
+            "has_leather": {
+              "type": "boolean"
+            },
+            "has_navigation": {
+              "type": "boolean"
+            },
+            "exterior_color": {
+              "type": "string"
+            },
+            "exterior_color_category": {
+              "type": "string"
+            },
+            "interior_color": {
+              "type": "string"
+            },
+            "interior_color_category": {
+              "type": "string"
+            },
+            "price_analysis": {
+              "type": "boolean"
+            },
+            "wheelbase_from_vin": {
+              "type": "string"
+            },
+            "drivetrain_from_vin": {
+              "type": "string"
+            },
+            "engine_from_vin": {
+              "type": "string"
+            },
+            "transmission_from_vin": {
+              "type": "string"
+            },
+            "fuel_type_from_vin": {
+              "type": "string"
+            },
+            "optional_features": {
+              "type": "string"
+            },
+            "standard_features": {
+              "type": "string"
+            },
+            "seller_notes": {
+              "type": "string"
+            },
+            "number_price_changes": {
+              "type": "integer"
+            },
+            "price_history_delimited": {
+              "type": "string"
+            },
+            "price_history": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                }
+              ]
+            },
+            "distance_to_dealer": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "listing_id",
+            "listing_heading",
+            "listing_type",
+            "listing_url",
+            "listing_first_date",
+            "days_on_market",
+            "dealer_name",
+            "dealer_street",
+            "dealer_city",
+            "dealer_state",
+            "dealer_zipcode",
+            "dealer_url",
+            "dealer_email",
+            "dealer_phone",
+            "dealer_type",
+            "stock_type",
+            "vin",
+            "uvc",
+            "mileage",
+            "price",
+            "msrp",
+            "model_year",
+            "make",
+            "model",
+            "series",
+            "style",
+            "certified",
+            "has_leather",
+            "has_navigation",
+            "exterior_color",
+            "exterior_color_category",
+            "interior_color",
+            "interior_color_category",
+            "price_analysis",
+            "wheelbase_from_vin",
+            "drivetrain_from_vin",
+            "engine_from_vin",
+            "transmission_from_vin",
+            "fuel_type_from_vin",
+            "optional_features",
+            "standard_features",
+            "seller_notes",
+            "number_price_changes",
+            "price_history_delimited",
+            "price_history",
+            "distance_to_dealer"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "listing_id": {
+              "type": "string"
+            },
+            "listing_heading": {
+              "type": "string"
+            },
+            "listing_type": {
+              "type": "string"
+            },
+            "listing_url": {
+              "type": "string"
+            },
+            "listing_first_date": {
+              "type": "string"
+            },
+            "days_on_market": {
+              "type": "integer"
+            },
+            "dealer_name": {
+              "type": "string"
+            },
+            "dealer_street": {
+              "type": "string"
+            },
+            "dealer_city": {
+              "type": "string"
+            },
+            "dealer_state": {
+              "type": "string"
+            },
+            "dealer_zipcode": {
+              "type": "string"
+            },
+            "dealer_url": {
+              "type": "string"
+            },
+            "dealer_email": {
+              "type": "string"
+            },
+            "dealer_phone": {
+              "type": "string"
+            },
+            "dealer_type": {
+              "type": "string"
+            },
+            "stock_type": {
+              "type": "string"
+            },
+            "vin": {
+              "type": "string"
+            },
+            "uvc": {
+              "type": "string"
+            },
+            "mileage": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "msrp": {
+              "type": "integer"
+            },
+            "model_year": {
+              "type": "string"
+            },
+            "make": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "series": {
+              "type": "string"
+            },
+            "style": {
+              "type": "string"
+            },
+            "certified": {
+              "type": "boolean"
+            },
+            "has_leather": {
+              "type": "boolean"
+            },
+            "has_navigation": {
+              "type": "boolean"
+            },
+            "exterior_color": {
+              "type": "string"
+            },
+            "exterior_color_category": {
+              "type": "string"
+            },
+            "interior_color": {
+              "type": "string"
+            },
+            "interior_color_category": {
+              "type": "string"
+            },
+            "price_analysis": {
+              "type": "boolean"
+            },
+            "wheelbase_from_vin": {
+              "type": "string"
+            },
+            "drivetrain_from_vin": {
+              "type": "string"
+            },
+            "engine_from_vin": {
+              "type": "string"
+            },
+            "transmission_from_vin": {
+              "type": "string"
+            },
+            "fuel_type_from_vin": {
+              "type": "string"
+            },
+            "optional_features": {
+              "type": "string"
+            },
+            "standard_features": {
+              "type": "string"
+            },
+            "seller_notes": {
+              "type": "string"
+            },
+            "number_price_changes": {
+              "type": "integer"
+            },
+            "price_history_delimited": {
+              "type": "string"
+            },
+            "price_history": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                }
+              ]
+            },
+            "distance_to_dealer": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "listing_id",
+            "listing_heading",
+            "listing_type",
+            "listing_url",
+            "listing_first_date",
+            "days_on_market",
+            "dealer_name",
+            "dealer_street",
+            "dealer_city",
+            "dealer_state",
+            "dealer_zipcode",
+            "dealer_url",
+            "dealer_email",
+            "dealer_phone",
+            "dealer_type",
+            "stock_type",
+            "vin",
+            "uvc",
+            "mileage",
+            "price",
+            "msrp",
+            "model_year",
+            "make",
+            "model",
+            "series",
+            "style",
+            "certified",
+            "has_leather",
+            "has_navigation",
+            "exterior_color",
+            "exterior_color_category",
+            "interior_color",
+            "interior_color_category",
+            "price_analysis",
+            "wheelbase_from_vin",
+            "drivetrain_from_vin",
+            "engine_from_vin",
+            "transmission_from_vin",
+            "fuel_type_from_vin",
+            "optional_features",
+            "standard_features",
+            "seller_notes",
+            "number_price_changes",
+            "price_history_delimited",
+            "price_history",
+            "distance_to_dealer"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "listing_id": {
+              "type": "string"
+            },
+            "listing_heading": {
+              "type": "string"
+            },
+            "listing_type": {
+              "type": "string"
+            },
+            "listing_url": {
+              "type": "string"
+            },
+            "listing_first_date": {
+              "type": "string"
+            },
+            "days_on_market": {
+              "type": "integer"
+            },
+            "dealer_name": {
+              "type": "string"
+            },
+            "dealer_street": {
+              "type": "string"
+            },
+            "dealer_city": {
+              "type": "string"
+            },
+            "dealer_state": {
+              "type": "string"
+            },
+            "dealer_zipcode": {
+              "type": "string"
+            },
+            "dealer_url": {
+              "type": "string"
+            },
+            "dealer_email": {
+              "type": "string"
+            },
+            "dealer_phone": {
+              "type": "string"
+            },
+            "dealer_type": {
+              "type": "string"
+            },
+            "stock_type": {
+              "type": "string"
+            },
+            "vin": {
+              "type": "string"
+            },
+            "uvc": {
+              "type": "string"
+            },
+            "mileage": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "msrp": {
+              "type": "integer"
+            },
+            "model_year": {
+              "type": "string"
+            },
+            "make": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "series": {
+              "type": "string"
+            },
+            "style": {
+              "type": "string"
+            },
+            "certified": {
+              "type": "boolean"
+            },
+            "has_leather": {
+              "type": "boolean"
+            },
+            "has_navigation": {
+              "type": "boolean"
+            },
+            "exterior_color": {
+              "type": "string"
+            },
+            "exterior_color_category": {
+              "type": "string"
+            },
+            "interior_color": {
+              "type": "string"
+            },
+            "interior_color_category": {
+              "type": "string"
+            },
+            "price_analysis": {
+              "type": "boolean"
+            },
+            "wheelbase_from_vin": {
+              "type": "string"
+            },
+            "drivetrain_from_vin": {
+              "type": "string"
+            },
+            "engine_from_vin": {
+              "type": "string"
+            },
+            "transmission_from_vin": {
+              "type": "string"
+            },
+            "fuel_type_from_vin": {
+              "type": "string"
+            },
+            "optional_features": {
+              "type": "string"
+            },
+            "standard_features": {
+              "type": "string"
+            },
+            "seller_notes": {
+              "type": "string"
+            },
+            "number_price_changes": {
+              "type": "integer"
+            },
+            "price_history_delimited": {
+              "type": "string"
+            },
+            "price_history": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                }
+              ]
+            },
+            "distance_to_dealer": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "listing_id",
+            "listing_heading",
+            "listing_type",
+            "listing_url",
+            "listing_first_date",
+            "days_on_market",
+            "dealer_name",
+            "dealer_street",
+            "dealer_city",
+            "dealer_state",
+            "dealer_zipcode",
+            "dealer_url",
+            "dealer_email",
+            "dealer_phone",
+            "dealer_type",
+            "stock_type",
+            "vin",
+            "uvc",
+            "mileage",
+            "price",
+            "msrp",
+            "model_year",
+            "make",
+            "model",
+            "series",
+            "style",
+            "certified",
+            "has_leather",
+            "has_navigation",
+            "exterior_color",
+            "exterior_color_category",
+            "interior_color",
+            "interior_color_category",
+            "price_analysis",
+            "wheelbase_from_vin",
+            "drivetrain_from_vin",
+            "engine_from_vin",
+            "transmission_from_vin",
+            "fuel_type_from_vin",
+            "optional_features",
+            "standard_features",
+            "seller_notes",
+            "number_price_changes",
+            "price_history_delimited",
+            "price_history",
+            "distance_to_dealer"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "listing_id": {
+              "type": "string"
+            },
+            "listing_heading": {
+              "type": "string"
+            },
+            "listing_type": {
+              "type": "string"
+            },
+            "listing_url": {
+              "type": "string"
+            },
+            "listing_first_date": {
+              "type": "string"
+            },
+            "days_on_market": {
+              "type": "integer"
+            },
+            "dealer_name": {
+              "type": "string"
+            },
+            "dealer_street": {
+              "type": "string"
+            },
+            "dealer_city": {
+              "type": "string"
+            },
+            "dealer_state": {
+              "type": "string"
+            },
+            "dealer_zipcode": {
+              "type": "string"
+            },
+            "dealer_url": {
+              "type": "string"
+            },
+            "dealer_email": {
+              "type": "string"
+            },
+            "dealer_phone": {
+              "type": "string"
+            },
+            "dealer_type": {
+              "type": "string"
+            },
+            "stock_type": {
+              "type": "string"
+            },
+            "vin": {
+              "type": "string"
+            },
+            "uvc": {
+              "type": "string"
+            },
+            "mileage": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "msrp": {
+              "type": "integer"
+            },
+            "model_year": {
+              "type": "string"
+            },
+            "make": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "series": {
+              "type": "string"
+            },
+            "style": {
+              "type": "string"
+            },
+            "certified": {
+              "type": "boolean"
+            },
+            "has_leather": {
+              "type": "boolean"
+            },
+            "has_navigation": {
+              "type": "boolean"
+            },
+            "exterior_color": {
+              "type": "string"
+            },
+            "exterior_color_category": {
+              "type": "string"
+            },
+            "interior_color": {
+              "type": "string"
+            },
+            "interior_color_category": {
+              "type": "string"
+            },
+            "price_analysis": {
+              "type": "boolean"
+            },
+            "wheelbase_from_vin": {
+              "type": "string"
+            },
+            "drivetrain_from_vin": {
+              "type": "string"
+            },
+            "engine_from_vin": {
+              "type": "string"
+            },
+            "transmission_from_vin": {
+              "type": "string"
+            },
+            "fuel_type_from_vin": {
+              "type": "string"
+            },
+            "optional_features": {
+              "type": "string"
+            },
+            "standard_features": {
+              "type": "string"
+            },
+            "seller_notes": {
+              "type": "string"
+            },
+            "number_price_changes": {
+              "type": "integer"
+            },
+            "price_history_delimited": {
+              "type": "string"
+            },
+            "price_history": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                }
+              ]
+            },
+            "distance_to_dealer": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "listing_id",
+            "listing_heading",
+            "listing_type",
+            "listing_url",
+            "listing_first_date",
+            "days_on_market",
+            "dealer_name",
+            "dealer_street",
+            "dealer_city",
+            "dealer_state",
+            "dealer_zipcode",
+            "dealer_url",
+            "dealer_email",
+            "dealer_phone",
+            "dealer_type",
+            "stock_type",
+            "vin",
+            "uvc",
+            "mileage",
+            "price",
+            "msrp",
+            "model_year",
+            "make",
+            "model",
+            "series",
+            "style",
+            "certified",
+            "has_leather",
+            "has_navigation",
+            "exterior_color",
+            "exterior_color_category",
+            "interior_color",
+            "interior_color_category",
+            "price_analysis",
+            "wheelbase_from_vin",
+            "drivetrain_from_vin",
+            "engine_from_vin",
+            "transmission_from_vin",
+            "fuel_type_from_vin",
+            "optional_features",
+            "standard_features",
+            "seller_notes",
+            "number_price_changes",
+            "price_history_delimited",
+            "price_history",
+            "distance_to_dealer"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "listing_id": {
+              "type": "string"
+            },
+            "listing_heading": {
+              "type": "string"
+            },
+            "listing_type": {
+              "type": "string"
+            },
+            "listing_url": {
+              "type": "string"
+            },
+            "listing_first_date": {
+              "type": "string"
+            },
+            "days_on_market": {
+              "type": "integer"
+            },
+            "dealer_name": {
+              "type": "string"
+            },
+            "dealer_street": {
+              "type": "string"
+            },
+            "dealer_city": {
+              "type": "string"
+            },
+            "dealer_state": {
+              "type": "string"
+            },
+            "dealer_zipcode": {
+              "type": "string"
+            },
+            "dealer_url": {
+              "type": "string"
+            },
+            "dealer_email": {
+              "type": "string"
+            },
+            "dealer_phone": {
+              "type": "string"
+            },
+            "dealer_type": {
+              "type": "string"
+            },
+            "stock_type": {
+              "type": "string"
+            },
+            "vin": {
+              "type": "string"
+            },
+            "uvc": {
+              "type": "string"
+            },
+            "mileage": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "msrp": {
+              "type": "integer"
+            },
+            "model_year": {
+              "type": "string"
+            },
+            "make": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "series": {
+              "type": "string"
+            },
+            "style": {
+              "type": "string"
+            },
+            "certified": {
+              "type": "boolean"
+            },
+            "has_leather": {
+              "type": "boolean"
+            },
+            "has_navigation": {
+              "type": "boolean"
+            },
+            "exterior_color": {
+              "type": "string"
+            },
+            "exterior_color_category": {
+              "type": "string"
+            },
+            "interior_color": {
+              "type": "string"
+            },
+            "interior_color_category": {
+              "type": "string"
+            },
+            "price_analysis": {
+              "type": "boolean"
+            },
+            "wheelbase_from_vin": {
+              "type": "string"
+            },
+            "drivetrain_from_vin": {
+              "type": "string"
+            },
+            "engine_from_vin": {
+              "type": "string"
+            },
+            "transmission_from_vin": {
+              "type": "string"
+            },
+            "fuel_type_from_vin": {
+              "type": "string"
+            },
+            "optional_features": {
+              "type": "string"
+            },
+            "standard_features": {
+              "type": "string"
+            },
+            "seller_notes": {
+              "type": "string"
+            },
+            "number_price_changes": {
+              "type": "integer"
+            },
+            "price_history_delimited": {
+              "type": "string"
+            },
+            "price_history": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                }
+              ]
+            },
+            "distance_to_dealer": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "listing_id",
+            "listing_heading",
+            "listing_type",
+            "listing_url",
+            "listing_first_date",
+            "days_on_market",
+            "dealer_name",
+            "dealer_street",
+            "dealer_city",
+            "dealer_state",
+            "dealer_zipcode",
+            "dealer_url",
+            "dealer_email",
+            "dealer_phone",
+            "dealer_type",
+            "stock_type",
+            "vin",
+            "uvc",
+            "mileage",
+            "price",
+            "msrp",
+            "model_year",
+            "make",
+            "model",
+            "series",
+            "style",
+            "certified",
+            "has_leather",
+            "has_navigation",
+            "exterior_color",
+            "exterior_color_category",
+            "interior_color",
+            "interior_color_category",
+            "price_analysis",
+            "wheelbase_from_vin",
+            "drivetrain_from_vin",
+            "engine_from_vin",
+            "transmission_from_vin",
+            "fuel_type_from_vin",
+            "optional_features",
+            "standard_features",
+            "seller_notes",
+            "number_price_changes",
+            "price_history_delimited",
+            "price_history",
+            "distance_to_dealer"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "listing_id": {
+              "type": "string"
+            },
+            "listing_heading": {
+              "type": "string"
+            },
+            "listing_type": {
+              "type": "string"
+            },
+            "listing_url": {
+              "type": "string"
+            },
+            "listing_first_date": {
+              "type": "string"
+            },
+            "days_on_market": {
+              "type": "integer"
+            },
+            "dealer_name": {
+              "type": "string"
+            },
+            "dealer_street": {
+              "type": "string"
+            },
+            "dealer_city": {
+              "type": "string"
+            },
+            "dealer_state": {
+              "type": "string"
+            },
+            "dealer_zipcode": {
+              "type": "string"
+            },
+            "dealer_url": {
+              "type": "string"
+            },
+            "dealer_email": {
+              "type": "string"
+            },
+            "dealer_phone": {
+              "type": "string"
+            },
+            "dealer_type": {
+              "type": "string"
+            },
+            "stock_type": {
+              "type": "string"
+            },
+            "vin": {
+              "type": "string"
+            },
+            "uvc": {
+              "type": "string"
+            },
+            "mileage": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "msrp": {
+              "type": "integer"
+            },
+            "model_year": {
+              "type": "string"
+            },
+            "make": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "series": {
+              "type": "string"
+            },
+            "style": {
+              "type": "string"
+            },
+            "certified": {
+              "type": "boolean"
+            },
+            "has_leather": {
+              "type": "boolean"
+            },
+            "has_navigation": {
+              "type": "boolean"
+            },
+            "exterior_color": {
+              "type": "string"
+            },
+            "exterior_color_category": {
+              "type": "string"
+            },
+            "interior_color": {
+              "type": "string"
+            },
+            "interior_color_category": {
+              "type": "string"
+            },
+            "price_analysis": {
+              "type": "boolean"
+            },
+            "wheelbase_from_vin": {
+              "type": "string"
+            },
+            "drivetrain_from_vin": {
+              "type": "string"
+            },
+            "engine_from_vin": {
+              "type": "string"
+            },
+            "transmission_from_vin": {
+              "type": "string"
+            },
+            "fuel_type_from_vin": {
+              "type": "string"
+            },
+            "optional_features": {
+              "type": "string"
+            },
+            "standard_features": {
+              "type": "string"
+            },
+            "seller_notes": {
+              "type": "string"
+            },
+            "number_price_changes": {
+              "type": "integer"
+            },
+            "price_history_delimited": {
+              "type": "string"
+            },
+            "price_history": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                }
+              ]
+            },
+            "distance_to_dealer": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "listing_id",
+            "listing_heading",
+            "listing_type",
+            "listing_url",
+            "listing_first_date",
+            "days_on_market",
+            "dealer_name",
+            "dealer_street",
+            "dealer_city",
+            "dealer_state",
+            "dealer_zipcode",
+            "dealer_url",
+            "dealer_email",
+            "dealer_phone",
+            "dealer_type",
+            "stock_type",
+            "vin",
+            "uvc",
+            "mileage",
+            "price",
+            "msrp",
+            "model_year",
+            "make",
+            "model",
+            "series",
+            "style",
+            "certified",
+            "has_leather",
+            "has_navigation",
+            "exterior_color",
+            "exterior_color_category",
+            "interior_color",
+            "interior_color_category",
+            "price_analysis",
+            "wheelbase_from_vin",
+            "drivetrain_from_vin",
+            "engine_from_vin",
+            "transmission_from_vin",
+            "fuel_type_from_vin",
+            "optional_features",
+            "standard_features",
+            "seller_notes",
+            "number_price_changes",
+            "price_history_delimited",
+            "price_history",
+            "distance_to_dealer"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "listing_id": {
+              "type": "string"
+            },
+            "listing_heading": {
+              "type": "string"
+            },
+            "listing_type": {
+              "type": "string"
+            },
+            "listing_url": {
+              "type": "string"
+            },
+            "listing_first_date": {
+              "type": "string"
+            },
+            "days_on_market": {
+              "type": "integer"
+            },
+            "dealer_name": {
+              "type": "string"
+            },
+            "dealer_street": {
+              "type": "string"
+            },
+            "dealer_city": {
+              "type": "string"
+            },
+            "dealer_state": {
+              "type": "string"
+            },
+            "dealer_zipcode": {
+              "type": "string"
+            },
+            "dealer_url": {
+              "type": "string"
+            },
+            "dealer_email": {
+              "type": "string"
+            },
+            "dealer_phone": {
+              "type": "string"
+            },
+            "dealer_type": {
+              "type": "string"
+            },
+            "stock_type": {
+              "type": "string"
+            },
+            "vin": {
+              "type": "string"
+            },
+            "uvc": {
+              "type": "string"
+            },
+            "mileage": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "msrp": {
+              "type": "integer"
+            },
+            "model_year": {
+              "type": "string"
+            },
+            "make": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "series": {
+              "type": "string"
+            },
+            "style": {
+              "type": "string"
+            },
+            "certified": {
+              "type": "boolean"
+            },
+            "has_leather": {
+              "type": "boolean"
+            },
+            "has_navigation": {
+              "type": "boolean"
+            },
+            "exterior_color": {
+              "type": "string"
+            },
+            "exterior_color_category": {
+              "type": "string"
+            },
+            "interior_color": {
+              "type": "string"
+            },
+            "interior_color_category": {
+              "type": "string"
+            },
+            "price_analysis": {
+              "type": "boolean"
+            },
+            "wheelbase_from_vin": {
+              "type": "string"
+            },
+            "drivetrain_from_vin": {
+              "type": "string"
+            },
+            "engine_from_vin": {
+              "type": "string"
+            },
+            "transmission_from_vin": {
+              "type": "string"
+            },
+            "fuel_type_from_vin": {
+              "type": "string"
+            },
+            "optional_features": {
+              "type": "string"
+            },
+            "standard_features": {
+              "type": "string"
+            },
+            "seller_notes": {
+              "type": "string"
+            },
+            "number_price_changes": {
+              "type": "integer"
+            },
+            "price_history_delimited": {
+              "type": "string"
+            },
+            "price_history": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                }
+              ]
+            },
+            "distance_to_dealer": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "listing_id",
+            "listing_heading",
+            "listing_type",
+            "listing_url",
+            "listing_first_date",
+            "days_on_market",
+            "dealer_name",
+            "dealer_street",
+            "dealer_city",
+            "dealer_state",
+            "dealer_zipcode",
+            "dealer_url",
+            "dealer_email",
+            "dealer_phone",
+            "dealer_type",
+            "stock_type",
+            "vin",
+            "uvc",
+            "mileage",
+            "price",
+            "msrp",
+            "model_year",
+            "make",
+            "model",
+            "series",
+            "style",
+            "certified",
+            "has_leather",
+            "has_navigation",
+            "exterior_color",
+            "exterior_color_category",
+            "interior_color",
+            "interior_color_category",
+            "price_analysis",
+            "wheelbase_from_vin",
+            "drivetrain_from_vin",
+            "engine_from_vin",
+            "transmission_from_vin",
+            "fuel_type_from_vin",
+            "optional_features",
+            "standard_features",
+            "seller_notes",
+            "number_price_changes",
+            "price_history_delimited",
+            "price_history",
+            "distance_to_dealer"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "listing_id": {
+              "type": "string"
+            },
+            "listing_heading": {
+              "type": "string"
+            },
+            "listing_type": {
+              "type": "string"
+            },
+            "listing_url": {
+              "type": "string"
+            },
+            "listing_first_date": {
+              "type": "string"
+            },
+            "days_on_market": {
+              "type": "integer"
+            },
+            "dealer_name": {
+              "type": "string"
+            },
+            "dealer_street": {
+              "type": "string"
+            },
+            "dealer_city": {
+              "type": "string"
+            },
+            "dealer_state": {
+              "type": "string"
+            },
+            "dealer_zipcode": {
+              "type": "string"
+            },
+            "dealer_url": {
+              "type": "string"
+            },
+            "dealer_email": {
+              "type": "string"
+            },
+            "dealer_phone": {
+              "type": "string"
+            },
+            "dealer_type": {
+              "type": "string"
+            },
+            "stock_type": {
+              "type": "string"
+            },
+            "vin": {
+              "type": "string"
+            },
+            "uvc": {
+              "type": "string"
+            },
+            "mileage": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "msrp": {
+              "type": "integer"
+            },
+            "model_year": {
+              "type": "string"
+            },
+            "make": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "series": {
+              "type": "string"
+            },
+            "style": {
+              "type": "string"
+            },
+            "certified": {
+              "type": "boolean"
+            },
+            "has_leather": {
+              "type": "boolean"
+            },
+            "has_navigation": {
+              "type": "boolean"
+            },
+            "exterior_color": {
+              "type": "string"
+            },
+            "exterior_color_category": {
+              "type": "string"
+            },
+            "interior_color": {
+              "type": "string"
+            },
+            "interior_color_category": {
+              "type": "string"
+            },
+            "price_analysis": {
+              "type": "boolean"
+            },
+            "wheelbase_from_vin": {
+              "type": "string"
+            },
+            "drivetrain_from_vin": {
+              "type": "string"
+            },
+            "engine_from_vin": {
+              "type": "string"
+            },
+            "transmission_from_vin": {
+              "type": "string"
+            },
+            "fuel_type_from_vin": {
+              "type": "string"
+            },
+            "optional_features": {
+              "type": "string"
+            },
+            "standard_features": {
+              "type": "string"
+            },
+            "seller_notes": {
+              "type": "string"
+            },
+            "number_price_changes": {
+              "type": "integer"
+            },
+            "price_history_delimited": {
+              "type": "string"
+            },
+            "price_history": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                }
+              ]
+            },
+            "distance_to_dealer": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "listing_id",
+            "listing_heading",
+            "listing_type",
+            "listing_url",
+            "listing_first_date",
+            "days_on_market",
+            "dealer_name",
+            "dealer_street",
+            "dealer_city",
+            "dealer_state",
+            "dealer_zipcode",
+            "dealer_url",
+            "dealer_email",
+            "dealer_phone",
+            "dealer_type",
+            "stock_type",
+            "vin",
+            "uvc",
+            "mileage",
+            "price",
+            "msrp",
+            "model_year",
+            "make",
+            "model",
+            "series",
+            "style",
+            "certified",
+            "has_leather",
+            "has_navigation",
+            "exterior_color",
+            "exterior_color_category",
+            "interior_color",
+            "interior_color_category",
+            "price_analysis",
+            "wheelbase_from_vin",
+            "drivetrain_from_vin",
+            "engine_from_vin",
+            "transmission_from_vin",
+            "fuel_type_from_vin",
+            "optional_features",
+            "standard_features",
+            "seller_notes",
+            "number_price_changes",
+            "price_history_delimited",
+            "price_history",
+            "distance_to_dealer"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "listing_id": {
+              "type": "string"
+            },
+            "listing_heading": {
+              "type": "string"
+            },
+            "listing_type": {
+              "type": "string"
+            },
+            "listing_url": {
+              "type": "string"
+            },
+            "listing_first_date": {
+              "type": "string"
+            },
+            "days_on_market": {
+              "type": "integer"
+            },
+            "dealer_name": {
+              "type": "string"
+            },
+            "dealer_street": {
+              "type": "string"
+            },
+            "dealer_city": {
+              "type": "string"
+            },
+            "dealer_state": {
+              "type": "string"
+            },
+            "dealer_zipcode": {
+              "type": "string"
+            },
+            "dealer_url": {
+              "type": "string"
+            },
+            "dealer_email": {
+              "type": "string"
+            },
+            "dealer_phone": {
+              "type": "string"
+            },
+            "dealer_type": {
+              "type": "string"
+            },
+            "stock_type": {
+              "type": "string"
+            },
+            "vin": {
+              "type": "string"
+            },
+            "uvc": {
+              "type": "string"
+            },
+            "mileage": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "msrp": {
+              "type": "integer"
+            },
+            "model_year": {
+              "type": "string"
+            },
+            "make": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "series": {
+              "type": "string"
+            },
+            "style": {
+              "type": "string"
+            },
+            "certified": {
+              "type": "boolean"
+            },
+            "has_leather": {
+              "type": "boolean"
+            },
+            "has_navigation": {
+              "type": "boolean"
+            },
+            "exterior_color": {
+              "type": "string"
+            },
+            "exterior_color_category": {
+              "type": "string"
+            },
+            "interior_color": {
+              "type": "string"
+            },
+            "interior_color_category": {
+              "type": "string"
+            },
+            "price_analysis": {
+              "type": "boolean"
+            },
+            "wheelbase_from_vin": {
+              "type": "string"
+            },
+            "drivetrain_from_vin": {
+              "type": "string"
+            },
+            "engine_from_vin": {
+              "type": "string"
+            },
+            "transmission_from_vin": {
+              "type": "string"
+            },
+            "fuel_type_from_vin": {
+              "type": "string"
+            },
+            "optional_features": {
+              "type": "string"
+            },
+            "standard_features": {
+              "type": "string"
+            },
+            "seller_notes": {
+              "type": "string"
+            },
+            "number_price_changes": {
+              "type": "integer"
+            },
+            "price_history_delimited": {
+              "type": "string"
+            },
+            "price_history": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                }
+              ]
+            },
+            "distance_to_dealer": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "listing_id",
+            "listing_heading",
+            "listing_type",
+            "listing_url",
+            "listing_first_date",
+            "days_on_market",
+            "dealer_name",
+            "dealer_street",
+            "dealer_city",
+            "dealer_state",
+            "dealer_zipcode",
+            "dealer_url",
+            "dealer_email",
+            "dealer_phone",
+            "dealer_type",
+            "stock_type",
+            "vin",
+            "uvc",
+            "mileage",
+            "price",
+            "msrp",
+            "model_year",
+            "make",
+            "model",
+            "series",
+            "style",
+            "certified",
+            "has_leather",
+            "has_navigation",
+            "exterior_color",
+            "exterior_color_category",
+            "interior_color",
+            "interior_color_category",
+            "price_analysis",
+            "wheelbase_from_vin",
+            "drivetrain_from_vin",
+            "engine_from_vin",
+            "transmission_from_vin",
+            "fuel_type_from_vin",
+            "optional_features",
+            "standard_features",
+            "seller_notes",
+            "number_price_changes",
+            "price_history_delimited",
+            "price_history",
+            "distance_to_dealer"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "listing_id": {
+              "type": "string"
+            },
+            "listing_heading": {
+              "type": "string"
+            },
+            "listing_type": {
+              "type": "string"
+            },
+            "listing_url": {
+              "type": "string"
+            },
+            "listing_first_date": {
+              "type": "string"
+            },
+            "days_on_market": {
+              "type": "integer"
+            },
+            "dealer_name": {
+              "type": "string"
+            },
+            "dealer_street": {
+              "type": "string"
+            },
+            "dealer_city": {
+              "type": "string"
+            },
+            "dealer_state": {
+              "type": "string"
+            },
+            "dealer_zipcode": {
+              "type": "string"
+            },
+            "dealer_url": {
+              "type": "string"
+            },
+            "dealer_email": {
+              "type": "string"
+            },
+            "dealer_phone": {
+              "type": "string"
+            },
+            "dealer_type": {
+              "type": "string"
+            },
+            "stock_type": {
+              "type": "string"
+            },
+            "vin": {
+              "type": "string"
+            },
+            "uvc": {
+              "type": "string"
+            },
+            "mileage": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "msrp": {
+              "type": "integer"
+            },
+            "model_year": {
+              "type": "string"
+            },
+            "make": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "series": {
+              "type": "string"
+            },
+            "style": {
+              "type": "string"
+            },
+            "certified": {
+              "type": "boolean"
+            },
+            "has_leather": {
+              "type": "boolean"
+            },
+            "has_navigation": {
+              "type": "boolean"
+            },
+            "exterior_color": {
+              "type": "string"
+            },
+            "exterior_color_category": {
+              "type": "string"
+            },
+            "interior_color": {
+              "type": "string"
+            },
+            "interior_color_category": {
+              "type": "string"
+            },
+            "price_analysis": {
+              "type": "boolean"
+            },
+            "wheelbase_from_vin": {
+              "type": "string"
+            },
+            "drivetrain_from_vin": {
+              "type": "string"
+            },
+            "engine_from_vin": {
+              "type": "string"
+            },
+            "transmission_from_vin": {
+              "type": "string"
+            },
+            "fuel_type_from_vin": {
+              "type": "string"
+            },
+            "optional_features": {
+              "type": "string"
+            },
+            "standard_features": {
+              "type": "string"
+            },
+            "seller_notes": {
+              "type": "string"
+            },
+            "number_price_changes": {
+              "type": "integer"
+            },
+            "price_history_delimited": {
+              "type": "string"
+            },
+            "price_history": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                }
+              ]
+            },
+            "distance_to_dealer": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "listing_id",
+            "listing_heading",
+            "listing_type",
+            "listing_url",
+            "listing_first_date",
+            "days_on_market",
+            "dealer_name",
+            "dealer_street",
+            "dealer_city",
+            "dealer_state",
+            "dealer_zipcode",
+            "dealer_url",
+            "dealer_email",
+            "dealer_phone",
+            "dealer_type",
+            "stock_type",
+            "vin",
+            "uvc",
+            "mileage",
+            "price",
+            "msrp",
+            "model_year",
+            "make",
+            "model",
+            "series",
+            "style",
+            "certified",
+            "has_leather",
+            "has_navigation",
+            "exterior_color",
+            "exterior_color_category",
+            "interior_color",
+            "interior_color_category",
+            "price_analysis",
+            "wheelbase_from_vin",
+            "drivetrain_from_vin",
+            "engine_from_vin",
+            "transmission_from_vin",
+            "fuel_type_from_vin",
+            "optional_features",
+            "standard_features",
+            "seller_notes",
+            "number_price_changes",
+            "price_history_delimited",
+            "price_history",
+            "distance_to_dealer"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "listing_id": {
+              "type": "string"
+            },
+            "listing_heading": {
+              "type": "string"
+            },
+            "listing_type": {
+              "type": "string"
+            },
+            "listing_url": {
+              "type": "string"
+            },
+            "listing_first_date": {
+              "type": "string"
+            },
+            "days_on_market": {
+              "type": "integer"
+            },
+            "dealer_name": {
+              "type": "string"
+            },
+            "dealer_street": {
+              "type": "string"
+            },
+            "dealer_city": {
+              "type": "string"
+            },
+            "dealer_state": {
+              "type": "string"
+            },
+            "dealer_zipcode": {
+              "type": "string"
+            },
+            "dealer_url": {
+              "type": "string"
+            },
+            "dealer_email": {
+              "type": "string"
+            },
+            "dealer_phone": {
+              "type": "string"
+            },
+            "dealer_type": {
+              "type": "string"
+            },
+            "stock_type": {
+              "type": "string"
+            },
+            "vin": {
+              "type": "string"
+            },
+            "uvc": {
+              "type": "string"
+            },
+            "mileage": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "msrp": {
+              "type": "integer"
+            },
+            "model_year": {
+              "type": "string"
+            },
+            "make": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "series": {
+              "type": "string"
+            },
+            "style": {
+              "type": "string"
+            },
+            "certified": {
+              "type": "boolean"
+            },
+            "has_leather": {
+              "type": "boolean"
+            },
+            "has_navigation": {
+              "type": "boolean"
+            },
+            "exterior_color": {
+              "type": "string"
+            },
+            "exterior_color_category": {
+              "type": "string"
+            },
+            "interior_color": {
+              "type": "string"
+            },
+            "interior_color_category": {
+              "type": "string"
+            },
+            "price_analysis": {
+              "type": "boolean"
+            },
+            "wheelbase_from_vin": {
+              "type": "string"
+            },
+            "drivetrain_from_vin": {
+              "type": "string"
+            },
+            "engine_from_vin": {
+              "type": "string"
+            },
+            "transmission_from_vin": {
+              "type": "string"
+            },
+            "fuel_type_from_vin": {
+              "type": "string"
+            },
+            "optional_features": {
+              "type": "string"
+            },
+            "standard_features": {
+              "type": "string"
+            },
+            "seller_notes": {
+              "type": "string"
+            },
+            "number_price_changes": {
+              "type": "integer"
+            },
+            "price_history_delimited": {
+              "type": "string"
+            },
+            "price_history": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                }
+              ]
+            },
+            "distance_to_dealer": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "listing_id",
+            "listing_heading",
+            "listing_type",
+            "listing_url",
+            "listing_first_date",
+            "days_on_market",
+            "dealer_name",
+            "dealer_street",
+            "dealer_city",
+            "dealer_state",
+            "dealer_zipcode",
+            "dealer_url",
+            "dealer_email",
+            "dealer_phone",
+            "dealer_type",
+            "stock_type",
+            "vin",
+            "uvc",
+            "mileage",
+            "price",
+            "msrp",
+            "model_year",
+            "make",
+            "model",
+            "series",
+            "style",
+            "certified",
+            "has_leather",
+            "has_navigation",
+            "exterior_color",
+            "exterior_color_category",
+            "interior_color",
+            "interior_color_category",
+            "price_analysis",
+            "wheelbase_from_vin",
+            "drivetrain_from_vin",
+            "engine_from_vin",
+            "transmission_from_vin",
+            "fuel_type_from_vin",
+            "optional_features",
+            "standard_features",
+            "seller_notes",
+            "number_price_changes",
+            "price_history_delimited",
+            "price_history",
+            "distance_to_dealer"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "listing_id": {
+              "type": "string"
+            },
+            "listing_heading": {
+              "type": "string"
+            },
+            "listing_type": {
+              "type": "string"
+            },
+            "listing_url": {
+              "type": "string"
+            },
+            "listing_first_date": {
+              "type": "string"
+            },
+            "days_on_market": {
+              "type": "integer"
+            },
+            "dealer_name": {
+              "type": "string"
+            },
+            "dealer_street": {
+              "type": "string"
+            },
+            "dealer_city": {
+              "type": "string"
+            },
+            "dealer_state": {
+              "type": "string"
+            },
+            "dealer_zipcode": {
+              "type": "string"
+            },
+            "dealer_url": {
+              "type": "string"
+            },
+            "dealer_email": {
+              "type": "string"
+            },
+            "dealer_phone": {
+              "type": "string"
+            },
+            "dealer_type": {
+              "type": "string"
+            },
+            "stock_type": {
+              "type": "string"
+            },
+            "vin": {
+              "type": "string"
+            },
+            "uvc": {
+              "type": "string"
+            },
+            "mileage": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "msrp": {
+              "type": "integer"
+            },
+            "model_year": {
+              "type": "string"
+            },
+            "make": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "series": {
+              "type": "string"
+            },
+            "style": {
+              "type": "string"
+            },
+            "certified": {
+              "type": "boolean"
+            },
+            "has_leather": {
+              "type": "boolean"
+            },
+            "has_navigation": {
+              "type": "boolean"
+            },
+            "exterior_color": {
+              "type": "string"
+            },
+            "exterior_color_category": {
+              "type": "string"
+            },
+            "interior_color": {
+              "type": "string"
+            },
+            "interior_color_category": {
+              "type": "string"
+            },
+            "price_analysis": {
+              "type": "boolean"
+            },
+            "wheelbase_from_vin": {
+              "type": "string"
+            },
+            "drivetrain_from_vin": {
+              "type": "string"
+            },
+            "engine_from_vin": {
+              "type": "string"
+            },
+            "transmission_from_vin": {
+              "type": "string"
+            },
+            "fuel_type_from_vin": {
+              "type": "string"
+            },
+            "optional_features": {
+              "type": "string"
+            },
+            "standard_features": {
+              "type": "string"
+            },
+            "seller_notes": {
+              "type": "string"
+            },
+            "number_price_changes": {
+              "type": "integer"
+            },
+            "price_history_delimited": {
+              "type": "string"
+            },
+            "price_history": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                }
+              ]
+            },
+            "distance_to_dealer": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "listing_id",
+            "listing_heading",
+            "listing_type",
+            "listing_url",
+            "listing_first_date",
+            "days_on_market",
+            "dealer_name",
+            "dealer_street",
+            "dealer_city",
+            "dealer_state",
+            "dealer_zipcode",
+            "dealer_url",
+            "dealer_email",
+            "dealer_phone",
+            "dealer_type",
+            "stock_type",
+            "vin",
+            "uvc",
+            "mileage",
+            "price",
+            "msrp",
+            "model_year",
+            "make",
+            "model",
+            "series",
+            "style",
+            "certified",
+            "has_leather",
+            "has_navigation",
+            "exterior_color",
+            "exterior_color_category",
+            "interior_color",
+            "interior_color_category",
+            "price_analysis",
+            "wheelbase_from_vin",
+            "drivetrain_from_vin",
+            "engine_from_vin",
+            "transmission_from_vin",
+            "fuel_type_from_vin",
+            "optional_features",
+            "standard_features",
+            "seller_notes",
+            "number_price_changes",
+            "price_history_delimited",
+            "price_history",
+            "distance_to_dealer"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "listing_id": {
+              "type": "string"
+            },
+            "listing_heading": {
+              "type": "string"
+            },
+            "listing_type": {
+              "type": "string"
+            },
+            "listing_url": {
+              "type": "string"
+            },
+            "listing_first_date": {
+              "type": "string"
+            },
+            "days_on_market": {
+              "type": "integer"
+            },
+            "dealer_name": {
+              "type": "string"
+            },
+            "dealer_street": {
+              "type": "string"
+            },
+            "dealer_city": {
+              "type": "string"
+            },
+            "dealer_state": {
+              "type": "string"
+            },
+            "dealer_zipcode": {
+              "type": "string"
+            },
+            "dealer_url": {
+              "type": "string"
+            },
+            "dealer_email": {
+              "type": "string"
+            },
+            "dealer_phone": {
+              "type": "string"
+            },
+            "dealer_type": {
+              "type": "string"
+            },
+            "stock_type": {
+              "type": "string"
+            },
+            "vin": {
+              "type": "string"
+            },
+            "uvc": {
+              "type": "string"
+            },
+            "mileage": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "msrp": {
+              "type": "integer"
+            },
+            "model_year": {
+              "type": "string"
+            },
+            "make": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "series": {
+              "type": "string"
+            },
+            "style": {
+              "type": "string"
+            },
+            "certified": {
+              "type": "boolean"
+            },
+            "has_leather": {
+              "type": "boolean"
+            },
+            "has_navigation": {
+              "type": "boolean"
+            },
+            "exterior_color": {
+              "type": "string"
+            },
+            "exterior_color_category": {
+              "type": "string"
+            },
+            "interior_color": {
+              "type": "string"
+            },
+            "interior_color_category": {
+              "type": "string"
+            },
+            "price_analysis": {
+              "type": "boolean"
+            },
+            "wheelbase_from_vin": {
+              "type": "string"
+            },
+            "drivetrain_from_vin": {
+              "type": "string"
+            },
+            "engine_from_vin": {
+              "type": "string"
+            },
+            "transmission_from_vin": {
+              "type": "string"
+            },
+            "fuel_type_from_vin": {
+              "type": "string"
+            },
+            "optional_features": {
+              "type": "string"
+            },
+            "standard_features": {
+              "type": "string"
+            },
+            "seller_notes": {
+              "type": "string"
+            },
+            "number_price_changes": {
+              "type": "integer"
+            },
+            "price_history_delimited": {
+              "type": "string"
+            },
+            "price_history": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                }
+              ]
+            },
+            "distance_to_dealer": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "listing_id",
+            "listing_heading",
+            "listing_type",
+            "listing_url",
+            "listing_first_date",
+            "days_on_market",
+            "dealer_name",
+            "dealer_street",
+            "dealer_city",
+            "dealer_state",
+            "dealer_zipcode",
+            "dealer_url",
+            "dealer_email",
+            "dealer_phone",
+            "dealer_type",
+            "stock_type",
+            "vin",
+            "uvc",
+            "mileage",
+            "price",
+            "msrp",
+            "model_year",
+            "make",
+            "model",
+            "series",
+            "style",
+            "certified",
+            "has_leather",
+            "has_navigation",
+            "exterior_color",
+            "exterior_color_category",
+            "interior_color",
+            "interior_color_category",
+            "price_analysis",
+            "wheelbase_from_vin",
+            "drivetrain_from_vin",
+            "engine_from_vin",
+            "transmission_from_vin",
+            "fuel_type_from_vin",
+            "optional_features",
+            "standard_features",
+            "seller_notes",
+            "number_price_changes",
+            "price_history_delimited",
+            "price_history",
+            "distance_to_dealer"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "listing_id": {
+              "type": "string"
+            },
+            "listing_heading": {
+              "type": "string"
+            },
+            "listing_type": {
+              "type": "string"
+            },
+            "listing_url": {
+              "type": "string"
+            },
+            "listing_first_date": {
+              "type": "string"
+            },
+            "days_on_market": {
+              "type": "integer"
+            },
+            "dealer_name": {
+              "type": "string"
+            },
+            "dealer_street": {
+              "type": "string"
+            },
+            "dealer_city": {
+              "type": "string"
+            },
+            "dealer_state": {
+              "type": "string"
+            },
+            "dealer_zipcode": {
+              "type": "string"
+            },
+            "dealer_url": {
+              "type": "string"
+            },
+            "dealer_email": {
+              "type": "string"
+            },
+            "dealer_phone": {
+              "type": "string"
+            },
+            "dealer_type": {
+              "type": "string"
+            },
+            "stock_type": {
+              "type": "string"
+            },
+            "vin": {
+              "type": "string"
+            },
+            "uvc": {
+              "type": "string"
+            },
+            "mileage": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "msrp": {
+              "type": "integer"
+            },
+            "model_year": {
+              "type": "string"
+            },
+            "make": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "series": {
+              "type": "string"
+            },
+            "style": {
+              "type": "string"
+            },
+            "certified": {
+              "type": "boolean"
+            },
+            "has_leather": {
+              "type": "boolean"
+            },
+            "has_navigation": {
+              "type": "boolean"
+            },
+            "exterior_color": {
+              "type": "string"
+            },
+            "exterior_color_category": {
+              "type": "string"
+            },
+            "interior_color": {
+              "type": "string"
+            },
+            "interior_color_category": {
+              "type": "string"
+            },
+            "price_analysis": {
+              "type": "boolean"
+            },
+            "wheelbase_from_vin": {
+              "type": "string"
+            },
+            "drivetrain_from_vin": {
+              "type": "string"
+            },
+            "engine_from_vin": {
+              "type": "string"
+            },
+            "transmission_from_vin": {
+              "type": "string"
+            },
+            "fuel_type_from_vin": {
+              "type": "string"
+            },
+            "optional_features": {
+              "type": "string"
+            },
+            "standard_features": {
+              "type": "string"
+            },
+            "seller_notes": {
+              "type": "string"
+            },
+            "number_price_changes": {
+              "type": "integer"
+            },
+            "price_history_delimited": {
+              "type": "string"
+            },
+            "price_history": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                }
+              ]
+            },
+            "distance_to_dealer": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "listing_id",
+            "listing_heading",
+            "listing_type",
+            "listing_url",
+            "listing_first_date",
+            "days_on_market",
+            "dealer_name",
+            "dealer_street",
+            "dealer_city",
+            "dealer_state",
+            "dealer_zipcode",
+            "dealer_url",
+            "dealer_email",
+            "dealer_phone",
+            "dealer_type",
+            "stock_type",
+            "vin",
+            "uvc",
+            "mileage",
+            "price",
+            "msrp",
+            "model_year",
+            "make",
+            "model",
+            "series",
+            "style",
+            "certified",
+            "has_leather",
+            "has_navigation",
+            "exterior_color",
+            "exterior_color_category",
+            "interior_color",
+            "interior_color_category",
+            "price_analysis",
+            "wheelbase_from_vin",
+            "drivetrain_from_vin",
+            "engine_from_vin",
+            "transmission_from_vin",
+            "fuel_type_from_vin",
+            "optional_features",
+            "standard_features",
+            "seller_notes",
+            "number_price_changes",
+            "price_history_delimited",
+            "price_history",
+            "distance_to_dealer"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "listing_id": {
+              "type": "string"
+            },
+            "listing_heading": {
+              "type": "string"
+            },
+            "listing_type": {
+              "type": "string"
+            },
+            "listing_url": {
+              "type": "string"
+            },
+            "listing_first_date": {
+              "type": "string"
+            },
+            "days_on_market": {
+              "type": "integer"
+            },
+            "dealer_name": {
+              "type": "string"
+            },
+            "dealer_street": {
+              "type": "string"
+            },
+            "dealer_city": {
+              "type": "string"
+            },
+            "dealer_state": {
+              "type": "string"
+            },
+            "dealer_zipcode": {
+              "type": "string"
+            },
+            "dealer_url": {
+              "type": "string"
+            },
+            "dealer_email": {
+              "type": "string"
+            },
+            "dealer_phone": {
+              "type": "string"
+            },
+            "dealer_type": {
+              "type": "string"
+            },
+            "stock_type": {
+              "type": "string"
+            },
+            "vin": {
+              "type": "string"
+            },
+            "uvc": {
+              "type": "string"
+            },
+            "mileage": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "msrp": {
+              "type": "integer"
+            },
+            "model_year": {
+              "type": "string"
+            },
+            "make": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "series": {
+              "type": "string"
+            },
+            "style": {
+              "type": "string"
+            },
+            "certified": {
+              "type": "boolean"
+            },
+            "has_leather": {
+              "type": "boolean"
+            },
+            "has_navigation": {
+              "type": "boolean"
+            },
+            "exterior_color": {
+              "type": "string"
+            },
+            "exterior_color_category": {
+              "type": "string"
+            },
+            "interior_color": {
+              "type": "string"
+            },
+            "interior_color_category": {
+              "type": "string"
+            },
+            "price_analysis": {
+              "type": "boolean"
+            },
+            "wheelbase_from_vin": {
+              "type": "string"
+            },
+            "drivetrain_from_vin": {
+              "type": "string"
+            },
+            "engine_from_vin": {
+              "type": "string"
+            },
+            "transmission_from_vin": {
+              "type": "string"
+            },
+            "fuel_type_from_vin": {
+              "type": "string"
+            },
+            "optional_features": {
+              "type": "string"
+            },
+            "standard_features": {
+              "type": "string"
+            },
+            "seller_notes": {
+              "type": "string"
+            },
+            "number_price_changes": {
+              "type": "integer"
+            },
+            "price_history_delimited": {
+              "type": "string"
+            },
+            "price_history": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                }
+              ]
+            },
+            "distance_to_dealer": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "listing_id",
+            "listing_heading",
+            "listing_type",
+            "listing_url",
+            "listing_first_date",
+            "days_on_market",
+            "dealer_name",
+            "dealer_street",
+            "dealer_city",
+            "dealer_state",
+            "dealer_zipcode",
+            "dealer_url",
+            "dealer_email",
+            "dealer_phone",
+            "dealer_type",
+            "stock_type",
+            "vin",
+            "uvc",
+            "mileage",
+            "price",
+            "msrp",
+            "model_year",
+            "make",
+            "model",
+            "series",
+            "style",
+            "certified",
+            "has_leather",
+            "has_navigation",
+            "exterior_color",
+            "exterior_color_category",
+            "interior_color",
+            "interior_color_category",
+            "price_analysis",
+            "wheelbase_from_vin",
+            "drivetrain_from_vin",
+            "engine_from_vin",
+            "transmission_from_vin",
+            "fuel_type_from_vin",
+            "optional_features",
+            "standard_features",
+            "seller_notes",
+            "number_price_changes",
+            "price_history_delimited",
+            "price_history",
+            "distance_to_dealer"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "listing_id": {
+              "type": "string"
+            },
+            "listing_heading": {
+              "type": "string"
+            },
+            "listing_type": {
+              "type": "string"
+            },
+            "listing_url": {
+              "type": "string"
+            },
+            "listing_first_date": {
+              "type": "string"
+            },
+            "days_on_market": {
+              "type": "integer"
+            },
+            "dealer_name": {
+              "type": "string"
+            },
+            "dealer_street": {
+              "type": "string"
+            },
+            "dealer_city": {
+              "type": "string"
+            },
+            "dealer_state": {
+              "type": "string"
+            },
+            "dealer_zipcode": {
+              "type": "string"
+            },
+            "dealer_url": {
+              "type": "string"
+            },
+            "dealer_email": {
+              "type": "string"
+            },
+            "dealer_phone": {
+              "type": "string"
+            },
+            "dealer_type": {
+              "type": "string"
+            },
+            "stock_type": {
+              "type": "string"
+            },
+            "vin": {
+              "type": "string"
+            },
+            "uvc": {
+              "type": "string"
+            },
+            "mileage": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "msrp": {
+              "type": "integer"
+            },
+            "model_year": {
+              "type": "string"
+            },
+            "make": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "series": {
+              "type": "string"
+            },
+            "style": {
+              "type": "string"
+            },
+            "certified": {
+              "type": "boolean"
+            },
+            "has_leather": {
+              "type": "boolean"
+            },
+            "has_navigation": {
+              "type": "boolean"
+            },
+            "exterior_color": {
+              "type": "string"
+            },
+            "exterior_color_category": {
+              "type": "string"
+            },
+            "interior_color": {
+              "type": "string"
+            },
+            "interior_color_category": {
+              "type": "string"
+            },
+            "price_analysis": {
+              "type": "boolean"
+            },
+            "wheelbase_from_vin": {
+              "type": "string"
+            },
+            "drivetrain_from_vin": {
+              "type": "string"
+            },
+            "engine_from_vin": {
+              "type": "string"
+            },
+            "transmission_from_vin": {
+              "type": "string"
+            },
+            "fuel_type_from_vin": {
+              "type": "string"
+            },
+            "optional_features": {
+              "type": "string"
+            },
+            "standard_features": {
+              "type": "string"
+            },
+            "seller_notes": {
+              "type": "string"
+            },
+            "number_price_changes": {
+              "type": "integer"
+            },
+            "price_history_delimited": {
+              "type": "string"
+            },
+            "price_history": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                }
+              ]
+            },
+            "distance_to_dealer": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "listing_id",
+            "listing_heading",
+            "listing_type",
+            "listing_url",
+            "listing_first_date",
+            "days_on_market",
+            "dealer_name",
+            "dealer_street",
+            "dealer_city",
+            "dealer_state",
+            "dealer_zipcode",
+            "dealer_url",
+            "dealer_email",
+            "dealer_phone",
+            "dealer_type",
+            "stock_type",
+            "vin",
+            "uvc",
+            "mileage",
+            "price",
+            "msrp",
+            "model_year",
+            "make",
+            "model",
+            "series",
+            "style",
+            "certified",
+            "has_leather",
+            "has_navigation",
+            "exterior_color",
+            "exterior_color_category",
+            "interior_color",
+            "interior_color_category",
+            "price_analysis",
+            "wheelbase_from_vin",
+            "drivetrain_from_vin",
+            "engine_from_vin",
+            "transmission_from_vin",
+            "fuel_type_from_vin",
+            "optional_features",
+            "standard_features",
+            "seller_notes",
+            "number_price_changes",
+            "price_history_delimited",
+            "price_history",
+            "distance_to_dealer"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "listing_id": {
+              "type": "string"
+            },
+            "listing_heading": {
+              "type": "string"
+            },
+            "listing_type": {
+              "type": "string"
+            },
+            "listing_url": {
+              "type": "string"
+            },
+            "listing_first_date": {
+              "type": "string"
+            },
+            "days_on_market": {
+              "type": "integer"
+            },
+            "dealer_name": {
+              "type": "string"
+            },
+            "dealer_street": {
+              "type": "string"
+            },
+            "dealer_city": {
+              "type": "string"
+            },
+            "dealer_state": {
+              "type": "string"
+            },
+            "dealer_zipcode": {
+              "type": "string"
+            },
+            "dealer_url": {
+              "type": "string"
+            },
+            "dealer_email": {
+              "type": "string"
+            },
+            "dealer_phone": {
+              "type": "string"
+            },
+            "dealer_type": {
+              "type": "string"
+            },
+            "stock_type": {
+              "type": "string"
+            },
+            "vin": {
+              "type": "string"
+            },
+            "uvc": {
+              "type": "string"
+            },
+            "mileage": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "msrp": {
+              "type": "integer"
+            },
+            "model_year": {
+              "type": "string"
+            },
+            "make": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "series": {
+              "type": "string"
+            },
+            "style": {
+              "type": "string"
+            },
+            "certified": {
+              "type": "boolean"
+            },
+            "has_leather": {
+              "type": "boolean"
+            },
+            "has_navigation": {
+              "type": "boolean"
+            },
+            "exterior_color": {
+              "type": "string"
+            },
+            "exterior_color_category": {
+              "type": "string"
+            },
+            "interior_color": {
+              "type": "string"
+            },
+            "interior_color_category": {
+              "type": "string"
+            },
+            "price_analysis": {
+              "type": "boolean"
+            },
+            "wheelbase_from_vin": {
+              "type": "string"
+            },
+            "drivetrain_from_vin": {
+              "type": "string"
+            },
+            "engine_from_vin": {
+              "type": "string"
+            },
+            "transmission_from_vin": {
+              "type": "string"
+            },
+            "fuel_type_from_vin": {
+              "type": "string"
+            },
+            "optional_features": {
+              "type": "string"
+            },
+            "standard_features": {
+              "type": "string"
+            },
+            "seller_notes": {
+              "type": "string"
+            },
+            "number_price_changes": {
+              "type": "integer"
+            },
+            "price_history_delimited": {
+              "type": "string"
+            },
+            "price_history": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                }
+              ]
+            },
+            "distance_to_dealer": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "listing_id",
+            "listing_heading",
+            "listing_type",
+            "listing_url",
+            "listing_first_date",
+            "days_on_market",
+            "dealer_name",
+            "dealer_street",
+            "dealer_city",
+            "dealer_state",
+            "dealer_zipcode",
+            "dealer_url",
+            "dealer_email",
+            "dealer_phone",
+            "dealer_type",
+            "stock_type",
+            "vin",
+            "uvc",
+            "mileage",
+            "price",
+            "msrp",
+            "model_year",
+            "make",
+            "model",
+            "series",
+            "style",
+            "certified",
+            "has_leather",
+            "has_navigation",
+            "exterior_color",
+            "exterior_color_category",
+            "interior_color",
+            "interior_color_category",
+            "price_analysis",
+            "wheelbase_from_vin",
+            "drivetrain_from_vin",
+            "engine_from_vin",
+            "transmission_from_vin",
+            "fuel_type_from_vin",
+            "optional_features",
+            "standard_features",
+            "seller_notes",
+            "number_price_changes",
+            "price_history_delimited",
+            "price_history",
+            "distance_to_dealer"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "listing_id": {
+              "type": "string"
+            },
+            "listing_heading": {
+              "type": "string"
+            },
+            "listing_type": {
+              "type": "string"
+            },
+            "listing_url": {
+              "type": "string"
+            },
+            "listing_first_date": {
+              "type": "string"
+            },
+            "days_on_market": {
+              "type": "integer"
+            },
+            "dealer_name": {
+              "type": "string"
+            },
+            "dealer_street": {
+              "type": "string"
+            },
+            "dealer_city": {
+              "type": "string"
+            },
+            "dealer_state": {
+              "type": "string"
+            },
+            "dealer_zipcode": {
+              "type": "string"
+            },
+            "dealer_url": {
+              "type": "string"
+            },
+            "dealer_email": {
+              "type": "string"
+            },
+            "dealer_phone": {
+              "type": "string"
+            },
+            "dealer_type": {
+              "type": "string"
+            },
+            "stock_type": {
+              "type": "string"
+            },
+            "vin": {
+              "type": "string"
+            },
+            "uvc": {
+              "type": "string"
+            },
+            "mileage": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "msrp": {
+              "type": "integer"
+            },
+            "model_year": {
+              "type": "string"
+            },
+            "make": {
+              "type": "string"
+            },
+            "model": {
+              "type": "string"
+            },
+            "series": {
+              "type": "string"
+            },
+            "style": {
+              "type": "string"
+            },
+            "certified": {
+              "type": "boolean"
+            },
+            "has_leather": {
+              "type": "boolean"
+            },
+            "has_navigation": {
+              "type": "boolean"
+            },
+            "exterior_color": {
+              "type": "string"
+            },
+            "exterior_color_category": {
+              "type": "string"
+            },
+            "interior_color": {
+              "type": "string"
+            },
+            "interior_color_category": {
+              "type": "string"
+            },
+            "price_analysis": {
+              "type": "boolean"
+            },
+            "wheelbase_from_vin": {
+              "type": "string"
+            },
+            "drivetrain_from_vin": {
+              "type": "string"
+            },
+            "engine_from_vin": {
+              "type": "string"
+            },
+            "transmission_from_vin": {
+              "type": "string"
+            },
+            "fuel_type_from_vin": {
+              "type": "string"
+            },
+            "optional_features": {
+              "type": "string"
+            },
+            "standard_features": {
+              "type": "string"
+            },
+            "seller_notes": {
+              "type": "string"
+            },
+            "number_price_changes": {
+              "type": "integer"
+            },
+            "price_history_delimited": {
+              "type": "string"
+            },
+            "price_history": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "change_date": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "integer"
+                    },
+                    "mileage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "change_date",
+                    "price",
+                    "mileage"
+                  ]
+                }
+              ]
+            },
+            "distance_to_dealer": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "listing_id",
+            "listing_heading",
+            "listing_type",
+            "listing_url",
+            "listing_first_date",
+            "days_on_market",
+            "dealer_name",
+            "dealer_street",
+            "dealer_city",
+            "dealer_state",
+            "dealer_zipcode",
+            "dealer_url",
+            "dealer_email",
+            "dealer_phone",
+            "dealer_type",
+            "stock_type",
+            "vin",
+            "uvc",
+            "mileage",
+            "price",
+            "msrp",
+            "model_year",
+            "make",
+            "model",
+            "series",
+            "style",
+            "certified",
+            "has_leather",
+            "has_navigation",
+            "exterior_color",
+            "exterior_color_category",
+            "interior_color",
+            "interior_color_category",
+            "price_analysis",
+            "wheelbase_from_vin",
+            "drivetrain_from_vin",
+            "engine_from_vin",
+            "transmission_from_vin",
+            "fuel_type_from_vin",
+            "optional_features",
+            "standard_features",
+            "seller_notes",
+            "number_price_changes",
+            "price_history_delimited",
+            "price_history",
+            "distance_to_dealer"
+          ]
+        }
+      ]
+    },
+    "listings_statistics": {
+      "type": "object",
+      "properties": {
+        "mean_days_to_turn": {
+          "type": "number"
+        },
+        "market_days_supply": {
+          "type": "number"
+        },
+        "active_statistics": {
+          "type": "object",
+          "properties": {
+            "vehicle_count": {
+              "type": "integer"
+            },
+            "minimum_price": {
+              "type": "integer"
+            },
+            "maximum_price": {
+              "type": "integer"
+            },
+            "mean_price": {
+              "type": "integer"
+            },
+            "median_price": {
+              "type": "integer"
+            },
+            "minimum_mileage": {
+              "type": "integer"
+            },
+            "maximum_mileage": {
+              "type": "integer"
+            },
+            "mean_mileage": {
+              "type": "integer"
+            },
+            "median_mileage": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "vehicle_count",
+            "minimum_price",
+            "maximum_price",
+            "mean_price",
+            "median_price",
+            "minimum_mileage",
+            "maximum_mileage",
+            "mean_mileage",
+            "median_mileage"
+          ]
+        },
+        "sold_statistics": {
+          "type": "object",
+          "properties": {
+            "vehicle_count": {
+              "type": "integer"
+            },
+            "minimum_price": {
+              "type": "integer"
+            },
+            "maximum_price": {
+              "type": "integer"
+            },
+            "mean_price": {
+              "type": "integer"
+            },
+            "median_price": {
+              "type": "integer"
+            },
+            "minimum_mileage": {
+              "type": "integer"
+            },
+            "maximum_mileage": {
+              "type": "integer"
+            },
+            "mean_mileage": {
+              "type": "integer"
+            },
+            "median_mileage": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "vehicle_count",
+            "minimum_price",
+            "maximum_price",
+            "mean_price",
+            "median_price",
+            "minimum_mileage",
+            "maximum_mileage",
+            "mean_mileage",
+            "median_mileage"
+          ]
+        }
+      },
+      "required": [
+        "mean_days_to_turn",
+        "market_days_supply",
+        "active_statistics",
+        "sold_statistics"
+      ]
+    }
+  },
+  "required": [
+    "warning_count",
+    "error_count",
+    "message_list",
+    "token_expiration_minutes",
+    "input_parameters",
+    "effective_parameters",
+    "record_count",
+    "page_count",
+    "listings",
+    "listings_statistics"
+  ]
+}
