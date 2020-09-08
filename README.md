@@ -43,8 +43,8 @@ _____
 ### UI Testing
 ##### The base test url is `https://computer-database.herokuapp.com/computers`
 > All relevant code should be placed in the `./ui_testing` folder
-1. Create a new computer with the following data:
-    * Computer name:        "<your choice>"
+1. Create a new computer with your choice of `Computer name` and the following data:
+    * Computer name:        "[your choice]"
     * Introduced date:      "2020-09-01"
     * Discontinued date:    "2021-09-01"
     * Company:              "Evans & Sutherland"
