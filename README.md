@@ -8,7 +8,7 @@ The test is broken into three separate parts:
   - knowledge of UI testing
 ________________
 #### Getting Started
-* Credentials are passed in plain text in the email you received.
+* Credentials are passed in plain text in the encrypted email you received.
 * Tests can be written in your language of choice however Black Book focuses on JavaScript and Python.
 * Tests repository should include a readme with explicit instructions on how to prepare the environment and execute the tests.
 
