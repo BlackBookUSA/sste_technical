@@ -48,7 +48,7 @@ _____
     * Introduced date:      "2020-09-01"
     * Discontinued date:    "2021-09-01"
     * Company:              "Evans & Sutherland"
-1. Verify that the computer is created by utilizing the "Filter by name" text box
+1. Verify that the computer is created by utilizing the "Filter by name" text box and table
 1. Click the `Computer name` and edit the `Discontinued Date` to `2022-09-01`
 1. Verify that the modified date is in the table
 1. Delete the Computer
