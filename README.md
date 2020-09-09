@@ -30,7 +30,7 @@ All API responses are JSON.
 
 Tests may append onto the url.  For example: if a test states that the url is 
 `listings` then the full request is 
-`https://sste-test.blackbook.com/retailapi/retailapi/listings`.
+`https://sste-test.blackbookcloud.com/retailapi/retailapi/listings`.
 
 #### Test Path: `/listings?uvc=2015300726&vin=1FTEW1EF8FFC45951&zipcode=30518`
 1. Confirm that the request returns a 200 status code
