@@ -35,6 +35,7 @@ Tests may append onto the url.  For example: if a test states that the url is
 #### Exercise 1:
 ##### Test Path: `/listings?uvc=2015300726&vin=1FTEW1EF8FFC45951&zipcode=30518`
 1. Confirm that the request returns a 200 status code
+1. Confirm that the duration of the request is less than 750ms
 1. Confirm that `effective_parameters.uvc` exists
 1. Iterate through `listings` and using regex verify that `listings[].msrp` is an integer
 1. Iterate through `message_list` and verify that `message_list.type` is not `Error`
