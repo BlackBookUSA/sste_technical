@@ -32,11 +32,23 @@ Tests may append onto the url.  For example: if a test states that the url is
 `listings` then the full request is 
 `https://sste-test.blackbookcloud.com/retailapi/retailapi/listings`.
 
-#### Test Path: `/listings?uvc=2015300726&vin=1FTEW1EF8FFC45951&zipcode=30518`
+#### Exercise 1:
+##### Test Path: `/listings?uvc=2015300726&vin=1FTEW1EF8FFC45951&zipcode=30518`
 1. Confirm that the request returns a 200 status code
 1. Confirm that `effective_parameters.uvc` exists
 1. Iterate through `listings` and using regex verify that `listings[].msrp` is an integer
 1. Iterate through `message_list` and verify that `message_list.type` is not `Error`
+
+#### Exercise 2:
+The endpoints below each return a different amount of warnings.
+
+In the response body validate that if "warning_count" != 0 then the number of objects in the “message_list” array that have "type": "warning" is equal to the integer value of "warning_count".  Responses with "warning_count" = 0 should have 0 messages of "type": "warning" 
+
+This should be an assertion that is validated as part of each endpoint test, so it should be an easily reusable function. 
+
+1. /RetailAPI/RetailAPI/ListingsStatistics?uvc=2015300208&zipcode=30531&minimum_mileage=0&maximum_mileage=12000&radius_miles=300&listing_type=active&all_trims=true
+1. /RetailAPI/RetailAPI/Listings?uvc=2015300208&zipcode=30565&minimum_mileage=2&maximum_mileage=12000&radius_miles=4000&in_state=true&listing_type=active&all_trims=true&price_analysis=true&listings_per_page=25&page_number=1
+1. /RetailAPI/RetailAPI/ListingsStatistics?uvc=2015300208&vin=1FTEW1EF8FFC45951&zipcode=30531&minimum_mileage=0&maximum_mileage=12000&radius_miles=4000&listing_type=active&all_trims=true
 
 _____
 
