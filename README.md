@@ -53,7 +53,7 @@ This should be an assertion that is validated as part of each endpoint test, so 
 _____
 
 ### UI Testing
-##### The base test url is `https://computer-database.herokuapp.com/computers`
+##### The base test url is `https://computer-database.gatling.io/computers`
 > All relevant code should be placed in the `./ui_testing` folder
 1. Create a new computer with your choice of `Computer name` and the following data:
     * Computer name:        "[your choice]"
