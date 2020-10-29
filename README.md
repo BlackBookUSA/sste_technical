@@ -22,7 +22,7 @@ ________________
 ____
 
 ### API Testing
-##### The base test url is `https://sste-test.blackbook.com/retailapi/retailapi/`
+##### The base test url is `https://sste-test.blackbookcloud.com/retailapi/retailapi/`
 ##### The json_schema is in `retail_schema.json` for reference 
 > All relevant code should be placed in the `./api_testing` folder
 
